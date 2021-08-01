@@ -13,6 +13,9 @@
 ## SKILL
 
 Python (Flask) 웹 프레임 워크 동작
-Java Script 레이더 차트, QTIPS 등 동적개체 작동 (제이쿼리)
-CSS 페이지 배경 등 구성
-Docker 
+
+Java Script : 레이더 차트, QTIPS 등 동적개체 작동 (Jquery)
+
+CSS : 페이지 배경 등 구성
+
+Docker : form container 
