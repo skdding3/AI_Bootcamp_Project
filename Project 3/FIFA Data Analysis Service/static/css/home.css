@@ -1,0 +1,119 @@
+/* Form 컨테이너화 */
+.search_container {
+    text-align: center;
+    float: left;
+    margin-left: 58vw;
+    width: 31vw;
+    margin-top: 37vh;
+}
+
+/* Form */
+input[type="search"] {
+    width: 100%;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+input[type="submit"] {
+    font-family: FontAwesome, "Raleway", Verdana, sans-serif;
+    background: #ef3f5a;
+    border: 1px solid #ef3f5a;
+    color: #fcfffc;
+    padding: 0 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    border-radius: 0px 6px 6px 0px;
+}
+
+input[type="submit"]:hover {
+    background: #d73851;
+    border: 1px solid #d73851;
+}
+
+.flex-form {
+    background: #fcfffc;
+    display: -webkit-box;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 120%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.flex-form > * {
+    border: 0;
+    padding: 0 0 0 20px;
+    background: #fcfffc;
+    line-height: 50px;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+/* Autocomplete */
+.autocomplete-suggestions {
+    border-radius: 6px 6px 6px 6px;
+    border: none !important;
+    top: 0px !important;
+    margin-left: -8px !important;
+    position: relative;
+    background: #fcfffc;
+}
+
+.autocomplete-suggestion {
+    background: #fcfffc;
+    color: #666;
+}
+
+.autocomplete-suggestion img {
+    vertical-align: middle;
+}
+
+.autocomplete-suggestion b {
+    color: #F50064;
+}
+
+/* RESPONSIVE DESIGN */
+@media all and (max-width:900px) {
+    .search_container {
+        width: 80% !important;
+        margin-left: 10% !important;
+        width: 80% !important;
+    }
+
+    .flex-form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-form > * {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        border-radius: 0px 0px 6px 6px !important;
+    }
+
+    body {
+        background: url("../img/homepage_bg_min.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+/* DELETE BROWSER FEATURES */
+
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

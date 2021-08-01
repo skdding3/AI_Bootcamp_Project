@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
+    <div class="search_container">
+        <form action="" method="post" class="flex-form" autocomplete="off">
+            {{ form.csrf_token }}
+            {{ form.player(type="search", id="address_textfield", class="form_player", placeholder="Search player", list="players_list", oninput="setCustomValidity('')") }}
+            <input type="submit" class="fa fa-input" value="&#xf002; Search">
+        </form>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js"></script>
+    <script>var players_list = Array.from({{ players_list|safe }}); var players_pattern = {{ players_pattern|tojson }};</script>
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}
