@@ -28,7 +28,7 @@ data
   ┖ image
   ┖ css
   ┖ fonts
-  ┖ jss
+  ┖ js
 ┖ templates
   ┖ base.html
   ┖ home.html
