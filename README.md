@@ -8,4 +8,4 @@ Section 1 - Game Analysis
 
 Section 2 - Pokemon Stats Classification ML
 
-Section 3 - API Create (FIFA 21 Player Data Analyst Service)
+Section 3 - API Create (FIFA 21 Player Data Analysis Service)
