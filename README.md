@@ -13,3 +13,5 @@ Section 3 - API Create (FIFA 21 Player Data Analysis Service)
 Section 4 - Deep Learning (Guitar Image Classification By Guitar Hero)
 
 Section 6 - Project ( LoL Data Analysis)
+
+          - Project 2
