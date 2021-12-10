@@ -1,6 +1,12 @@
 # FIFA 21 Data Analysis Web Service
 
 
+## 프로젝트 영상
+
+[![FIFA Project](http://img.youtube.com/vi/S59-mdPUYl4/0.jpg)](https://www.youtube.com/watch?v=S59-mdPUYl4) 
+
+링크 : https://www.youtube.com/watch?v=S59-mdPUYl4
+
 ## 개요
 
 축구게임 FIFA 21 선수 능력치 데이터를 조회하여 게임에 들어가지 않아도 웹에서 능력치를 확인하고 분석하는 서비스를 제공.
